@@ -47,9 +47,8 @@ const actualizar = (descripcion, completado) => {
         tareas.splice(index, 1, porHacer);
         guardarDB();
         return true;
-    } else {
-        return false;
     }
+    return false;
 };
 
 const borrar = (descripcion) => {
@@ -59,9 +58,8 @@ const borrar = (descripcion) => {
         tareas.splice(index, 1);
         guardarDB();
         return true;
-    } else {
-        return false;
     }
+    return false;
 };
 
 module.exports = {
